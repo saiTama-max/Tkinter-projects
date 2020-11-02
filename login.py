@@ -17,11 +17,11 @@ del_img = ImageTk.PhotoImage(Image.open('images/delete_btn.png'))
 conn = sqlite3.connect('username_login.db')
 c = conn.cursor()
 
-# comment after creating one time
-conn.execute("""CREATE TABLE usernames (
+
+conn.execute("""CREATE TABLE IF NOT EXISTS usernames (
             user_name text,
-            pass_word text)""")
-conn.execute("ALTER TABLE usernames ADD COLUMN email text")
+            pass_word text,
+	    email text)""")
 
 
 def submit():
