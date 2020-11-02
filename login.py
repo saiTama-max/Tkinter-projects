@@ -17,15 +17,11 @@ del_img = ImageTk.PhotoImage(Image.open('images/delete_btn.png'))
 conn = sqlite3.connect('username_login.db')
 c = conn.cursor()
 
-# os.chdir(r"C:\path\to\credentials_json_file")
-
-# ezgmail.init()
-
-# conn.execute("""CREATE TABLE usernames (
-#             user_name text,
-#             pass_word text)""")
-# conn.execute("ALTER TABLE usernames ADD COLUMN email text")
-
+# comment after creating one time
+conn.execute("""CREATE TABLE usernames (
+            user_name text,
+            pass_word text)""")
+conn.execute("ALTER TABLE usernames ADD COLUMN email text")
 
 
 def submit():
