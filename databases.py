@@ -15,8 +15,7 @@ conn = sqlite3.connect('address_book.db')
 c = conn.cursor()
 # Databases 
 
-# comment after creation
- conn.execute("""CREATE TABLE addresses (
+ conn.execute("""CREATE TABLE IF NOT EXISTS addresses (
              first_name text,
              last_name text,
              address text,
