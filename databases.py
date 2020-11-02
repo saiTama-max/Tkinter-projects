@@ -15,14 +15,14 @@ conn = sqlite3.connect('address_book.db')
 c = conn.cursor()
 # Databases 
 
-'''
+# comment after creation
  conn.execute("""CREATE TABLE addresses (
              first_name text,
              last_name text,
              address text,
              city text,
              state text,
-             zipcode integer)""")'''
+             zipcode integer)""")
 
 def update():
 	# global editor
