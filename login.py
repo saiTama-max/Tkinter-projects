@@ -3,7 +3,6 @@ import sqlite3
 from tkinter import *
 from tkinter import messagebox
 from PIL import ImageTk, Image
-from tic_tac_toe import TicTac
 
 root = Tk()
 root.title("Login system")
@@ -72,9 +71,6 @@ def login():
 	else:
 		master.destroy()
 		root.destroy()
-		TicTac()
-
-	
 
 	print(record)
 
