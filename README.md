@@ -5,7 +5,7 @@ Tkinter is a simple gui toolkit which is builtin with Python, it can be used to 
 ### Projects
 - A simple image viewer
 - A login/register system using sqlite3
-- A address storing, querying system using sqlite3
+- An address storing, querying system using sqlite3
 - A simple tic tac toe game
 - A simple rock paper scissor game
 - A straight forward weather app
